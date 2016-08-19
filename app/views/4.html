@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<select name="selectMethod" class="form-control" ng-model="sortMethod">
+				<option value="">Select Sort Method</option>
+				<option value="first_name">By First Name</option>
+				<option value="last_name">By Last Name</option>
+				<option value="country">By Country</option>
+			</select>
+		</div>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" placeholder="Search here..." ng-model="search.$">
+		</div>
+		<div class="col-sm-12">
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="d in data | orderBy: sortMethod | filter:search">
+					<span>
+						<b>First Name:</b>
+						{{d.first_name}}
+					</span>
+					<span>
+						<b>Last Name:</b>
+						{{d.last_name}}
+					</span>
+					<span>
+						<b>Country:</b>
+						{{d.country}}
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

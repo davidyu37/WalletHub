@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<p>
+				Param 1: {{param1}}
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item" ng-click="param1 = 'good'">good</li>
+				<li class="list-group-item" ng-click="param1 = 'great'">great</li>
+				<li class="list-group-item" ng-click="param1 = 'awesome'">awesome</li>
+			</ul>
+		</div>
+		<div class="col-sm-6">			
+			<p>
+				Param 2(optional): {{param2}}
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item" ng-click="param2 = 'person'">person</li>
+				<li class="list-group-item" ng-click="param2 = 'place'">place</li>
+				<li class="list-group-item" ng-click="param2 = 'time'">time</li>
+				<li class="list-group-item" ng-click="param2 = null">Clear param 2</li>
+			</ul>
+		</div>
+		<button class="btn btn-primary" ng-click="goToRoute()">Go to /{{param1}}/{{param2}}</button>
+	</div>
+</div>
+
+
+
+<div ui-view="{{child}}"></div>
+<div ui-view="{{grandchild}}"></div>

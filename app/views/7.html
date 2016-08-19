@@ -1,0 +1,20 @@
+<div class="container" style="margin: 30% auto;">
+	<div class="row">
+		<div class="col-sm-3">
+			<label>Number 1</label>
+			<input type="number" class="form-control" min="0" placeholder="Number 1" ng-model="number1" ng-change="add()" autofocus />
+		</div>
+		<div class="col-sm-3">
+			<label>Number 2</label>
+			<input type="number" class="form-control" min="0" placeholder="Number 2" ng-model="number2" ng-change="add()"/>
+		</div>
+		<div class="col-sm-3">
+			<label>Number 3</label>
+			<input type="number" class="form-control" min="0" placeholder="Number 3" ng-model="number3" ng-change="add()"/>
+		</div>
+		<div class="col-sm-3">
+			<label>Number 4</label>
+			<input type="number" class="form-control" min="0" placeholder="Number 4" ng-model="sum" ng-blur="spread(sum)"/>
+		</div>
+	</div>
+</div>

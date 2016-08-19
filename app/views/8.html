@@ -1,0 +1,16 @@
+<div class="container" style="margin: 30% auto;">
+	<div class="row">
+		<div class="col-sm-4">
+			<label>#1</label>
+			<input class="form-control" type="text" id="one" ng-model="number1" autofocus placeholder="oxoxo" />
+		</div>
+		<div class="col-sm-4">
+			<label>#2</label>
+			<input class="form-control" type="text" id="two" ng-model="number2" placeholder="oxoxo" ng-change="back(number2, 'one')"/>
+		</div>
+		<div class="col-sm-4">
+			<label>#3</label>
+			<input class="form-control" type="text" id="three" ng-model="number3" placeholder="oxoxo" ng-change="back(number3, 'two')"/>
+		</div>
+	</div>
+</div>
